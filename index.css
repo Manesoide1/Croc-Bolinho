@@ -529,7 +529,8 @@ footer {
     }
 }
 
-/* Estilos para a navbar móvel */
+/* Substitua os estilos da navbar-mobile no seu CSS por estes */
+
 .navbar-mobile {
     display: none;
     position: fixed;
@@ -539,7 +540,8 @@ footer {
     background-color: #FFA51F;
     border-bottom: solid 2.5px #492F1D;
     z-index: 1000;
-    padding: 15px;
+    padding: 10px 15px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura */
 }
 
 .navbar-mobile .menu-icon {
@@ -549,6 +551,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%; /* Garante que ocupe toda largura disponível */
 }
 
 .navbar-mobile .logo-text {
@@ -563,6 +566,7 @@ footer {
     flex-direction: column;
     width: 100%;
     padding: 10px 0;
+    margin-top: 10px; /* Espaço após o ícone do menu */
 }
 
 .navbar-mobile .mobile-links.active {
@@ -573,7 +577,7 @@ footer {
     text-decoration: none;
     color: #492F1D;
     font-weight: bold;
-    padding: 10px;
+    padding: 12px 10px; /* Aumenta área clicável */
     text-align: center;
     border-bottom: 1px solid #492F1D;
 }
@@ -582,13 +586,14 @@ footer {
     border-bottom: none;
 }
 
+/* Ajuste de margem para o corpo quando a navbar está visível */
 @media screen and (max-width: 992px) {
     .navbar-mobile {
         display: block;
     }
 
     .corpo {
-        margin-top: 80px;
+        margin-top: 70px !important; /* Aumenta para dar espaço à navbar */
     }
 
     #sumario {
