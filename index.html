@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page da Croc Bolinho</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+  <div class="corpo">
+
+    <header>
+      <div id="fachada">
+        <img src="imagens/SimboloPoteExplodindo.png" alt="Logo da Croc Bolinho">
+        <h1>Mais recheio, mais sabor, mais Croc!</h1>
+      </div>
+      <div id="sumario">
+        <a href="#beneficios">Porque comprar?</a>
+        <a href="#depoimentos">Opiniões</a>
+        <a href="#pedido">Faça seu pedido!</a>
+      </div>
+    </header>
+
+    <section id="qualidades">
+      <div id="beneficios">
+        <div class="beneficio" data-texto="Nossa casquinha é empanada artesanalmente e frita na hora!">
+          <img src="imagens/crocante.svg" alt="Panela fervendo">
+          <p>Casquinha super crocante!</p>
+        </div>
+        <div class="beneficio" data-texto="Temperos caseiros garantem aquele sabor único em cada mordida!!">
+          <img src="imagens/suculento.svg" alt="Emoji extremamente feliz">
+          <p>Recheio suculento e bem temperado!</p>
+        </div>
+        <div class="beneficio" data-texto="Ideal pro café da manhã, lanche da tarde ou madrugada!">
+          <img src="imagens/qualquerHora.svg" alt="Cronômetro">
+          <p>Vai bem em qualquer momento!</p>
+        </div>
+        <div class="beneficio" data-texto="Embalagens especiais que mantêm o bolinho quentinho no delivery!">
+          <img src="imagens/chegaQuente.svg" alt="Moto de entrega">
+          <p>Chega quentinho no delivery!</p>
+        </div>
+      </div>
+
+      <div id="area-texto"></div>
+    </section>
+
+    <section id="depoimentos">
+      <div class="avaliacao">
+        <img src="imagens/Ariadne.jpg" alt="Foto redonda">
+        <p>"'Feito com muito amor e carinho!' Foi essa a sensação que tive quando pude provar esse bolinho tão maravilhoso. Quero comer mais vezes!" - Ariadne Andrade</p>
+      </div>
+      <div class="avaliacao">
+        <img src="imagens/Laryssa.png" alt="Foto redonda">
+        <p>"Não sou uma pessoa de comer muito, como bem pouco na verdade, mas preciso ser sincera de que com esse bolinho eu acabei passando da conta. É muito gostoso!" - Laryssa Samways</p>
+      </div>
+      <div class="avaliacao">
+        <img src="imagens/Tiago.png" alt="Foto redonda">
+        <p>"Não gosto de bolinhos de carne, nunca gostei, mas acho que comi os bolinhos errados a vida toda, porque esse aqui é simplesmente perfeito!" - Tiago Wizintener</p>
+      </div>
+      <div class="avaliacao">
+        <img src="imagens/Hugo.jpg" alt="Foto redonda">
+        <p>"Normalmente não gosto de salgados fritos, porque tem muita massa e pouco recheio, mas esse bolinho é exatamente o oposto. Adorei!" - Hugo Oliveira</p>
+      </div>
+    </section>
+
+    <section id="pedido">
+      <div class="tamanho" id="div_maps">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.8885479114706!2d-51.490182325704076!3d-25.408541032040937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ef37d8c3c97769%3A0xa20a199cc6cec319!2sR.%20Rodrigues%20Alves%2C%20214%20-%20Boqueir%C3%A3o%2C%20Guarapuava%20-%20PR%2C%2085020-350!5e0!3m2!1spt-BR!2sbr!4v1751741994193!5m2!1spt-BR!2sbr"
+          width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+        <p><img src="imagens/seta.svg" alt="">Estamos aqui!<img src="imagens/seta.svg" alt=""></p>
+      </div>
+
+      <div class="tamanho" id="div_info">
+        <div class="info">
+          <img id="seta_cima" src="imagens/seta.svg" alt="">
+          <p>Venha e faça seu pedido pessoalmente!</p>
+        </div>
+        <div class="info">
+          <p>Ou pessa através de nosso site clicando aqui!</p>
+          <img id="seta_baixo" src="imagens/seta.svg" alt="">
+        </div>
+      </div>
+
+      <div class="tamanho" id="div_botao">
+        <p>Obrigado pela preferência!</p>
+        <a id="botao_pedido" href="pedido/pedido.html">Eu quero já!</a>
+      </div>
+    </section>
+
+    <footer>
+      <div id="midias">
+        <p><a href="#"><i class="bi bi-instagram" style="font-size: 24px; color: #492F1D;"></i>croc.bolinhos</a></p>
+      </div>
+      <div id="direitos">
+        <p>&copy; 2025 Croc Bolinho. Todos os direitos reservados.</p>
+        <p>Site desenvolvido por <a style="color: #492F1D;" href="https://github.com/Manesoide1" target="_blank"
+            rel="noopener noreferrer">Hugo Oliveira</a>.</p>
+        <p>Com contribuições de Ariadne Andrade, Laryssa Samways e Rebeca Wizintener.</p>
+      </div>
+    </footer>
+
+  </div>
+  <script src="index.js"></script>
+  <script src="navbar.js"></script>
+</body>
+
+</html>

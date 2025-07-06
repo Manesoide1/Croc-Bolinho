@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+  <title>Pedido dos Bolinhos da Ariadne</title>
+  <link rel="stylesheet" href="pedido.css">
+</head>
+
+<body>
+
+  <h1>Croc Bolinho</h1>
+  <h3 style="text-align: center;">Mais recheio, mais sabor, mais Croc!</h3>
+  <p style="text-align:center;">Peça agora seus bolinhos favoritos e receba em casa!</p>
+
+  <form id="pedidoForm">
+    <label>Seu nome:
+      <input type="text" id="nome" required>
+    </label>
+
+    <div id="produtosContainer">
+      <div class="produto-group">
+        <label>Porção de bolinhos:
+          <select class="sabor" required>
+            <option value="Bolinho unitário (145g)">Bolinho unitário (145g)</option>
+            <option value="Bolinho unitário c/ queijo (145g)">Bolinho unitário c/ queijo (145g)</option>
+            <option value="Porção de 3 bolinhos (145g cada)">Porção de 3 bolinhos (145g cada)</option>
+            <option value="X-Bolinho">X-Bolinho</option>
+            <option value="Salada">Salada</option>
+          </select>
+        </label>
+        <label>Quantidade:
+          <input type="number" class="quantidade" min="1" required>
+        </label>
+      </div>
+    </div>
+
+    <button type="button" onclick="adicionarProduto()">+ Adicionar outro produto</button>
+
+    <label>Forma de pagamento:
+      <select id="pagamento" required>
+        <option value="Dinheiro">Dinheiro</option>
+        <option value="Pix">Pix</option>
+        <option value="Cartão na entrega">Cartão na entrega</option>
+      </select>
+    </label>
+
+    <label>CEP:
+      <input type="text" id="cep" maxlength="9" placeholder="Ex: 16300-000" required onblur="buscarCEP()">
+    </label>
+
+    <label>Rua:
+      <input type="text" id="rua" readonly>
+    </label>
+
+    <label>Número:
+      <input type="text" id="numero" required>
+    </label>
+
+    <label>Complemento:
+      <input type="text" id="complemento">
+    </label>
+
+    <label>Bairro:
+      <input type="text" id="bairro" readonly>
+    </label>
+
+    <label>Cidade:
+      <input type="text" id="cidade" readonly>
+    </label>
+
+    <label>Estado:
+      <input type="text" id="estado" readonly>
+    </label>
+
+    <label id="observacao">
+      <p>Quaisquer observações, mandar logo após a mensagem do pedido.</p>
+      <p>Agradecemos a preferência!</p>
+    </label>
+
+    <button type="submit">Enviar Pedido via WhatsApp</button>
+  </form>
+
+  <script src="pedido.js"></script>
+
+</body>
+
+</html>

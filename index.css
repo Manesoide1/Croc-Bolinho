@@ -1,0 +1,597 @@
+/* Pacifico */
+@font-face {
+    font-family: 'GreatVibes';
+    src: url('fontes/Great_Vibes/GreatVibes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Poppins Light */
+/*@font-face {
+    font-family: 'Poppins';
+    src: url('fontes/Poppins/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}*/
+
+body {
+    font-family: sans-serif;
+    background-color: #492F1D;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+.corpo {
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin: 100px 0px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+
+header {
+    background-color: #FFA51F;
+    border-bottom: solid 2.5px #492F1D;
+}
+
+#fachada {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+#fachada img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+#fachada h1 {
+    color: #492F1D;
+    font-family: 'GreatVibes';
+    font-size: 3.5em;
+    font-weight: bolder;
+}
+
+#sumario {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+#sumario a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #492F1D;
+    font-size: 2em;
+    padding: 7px 20px;
+    border-radius: 30px;
+    border: solid 3px #492F1D;
+    transition: transform 0.05s ease, background-color 0.4s, color 0.4s;
+}
+
+#sumario a:hover {
+    background-color: #492F1D;
+    color: #FFA51F;
+}
+
+#sumario a:active {
+    transform: translateY(2px);
+    transition: none;
+}
+
+#qualidades {
+    border-top: solid 2.5px #492F1D;
+    border-bottom: solid 2.5px #492F1D;
+    background-color: #FFA51F;
+    padding: 10px;
+}
+
+#beneficios {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#beneficios .beneficio {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding: 10px;
+    width: 20%;
+    border-radius: 30px;
+}
+
+#beneficios div:hover {
+    transform: scale(1.1);
+    background-color: rgba(73, 47, 29, 0.1);
+}
+
+.beneficio.selecionado {
+    transform: scale(1.1);
+    background-color: rgba(73, 47, 29, 0.1);
+}
+
+#beneficios img {
+    width: 100px;
+}
+
+#beneficios p {
+    text-align: center;
+    color: #492F1D;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+#area-texto {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px auto 0 auto;
+    color: #4a2d0c;
+    max-width: 60%;
+
+    /* inicialmente escondido com max-height 0 e sem opacity */
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+
+    /* animação suave de altura e opacidade */
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+/* classe que mostra o texto com altura suficiente para o conteúdo */
+#area-texto.visivel {
+    opacity: 1;
+    max-height: 200px;
+    /* ajustar conforme a altura máxima esperada do texto */
+}
+
+#depoimentos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #FFA51F;
+    border-top: solid 2.5px #492F1D;
+    border-bottom: solid 2.5px #492F1D;
+}
+
+.avaliacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 45%;
+}
+
+.avaliacao img {
+    width: 150px;
+    border-radius: 50%;
+    border: solid 2px #492F1D;
+}
+
+.avaliacao p {
+    color: #492F1D;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#pedido {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFA51F;
+    border-top: solid 2.5px #492F1D;
+    border-bottom: solid 2.5px #492F1D;
+    color: #492F1D;
+    height: 300px;
+}
+
+#pedido .tamanho {
+    width: calc(100% / 3);
+}
+
+#div_maps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#div_maps p {
+    display: flex;
+    color: #492F1D;
+    margin-top: 10px;
+}
+
+#div_maps img {
+    width: 36px;
+}
+
+#div_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info p {
+    margin: 0;
+}
+
+.info img {
+    width: 1.5em;
+    height: auto;
+    flex-shrink: 0;
+}
+
+#seta_cima {
+    transform: rotate(-90deg);
+}
+
+#seta_baixo {
+    transform: rotate(90deg);
+}
+
+#div_botao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    text-align: center;
+    font-size: 2em;
+    margin: 10px;
+}
+
+#div_botao p {
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#botao_pedido {
+    text-decoration: none;
+    font-weight: bold;
+    color: #492F1D;
+    background-color: #FFA51F;
+    padding: 7px 20px;
+    border-radius: 30px;
+    border: solid 3px #492F1D;
+    transition: transform 0.05s, background-color 0.4s, color 0.4s;
+}
+
+#botao_pedido:hover {
+    background-color: #492F1D;
+    color: #FFA51F;
+}
+
+#botao_pedido:active {
+    transform: translateY(2px);
+    transition: none;
+}
+
+footer {
+    background-color: #FFA51F;
+    border-top: solid 2.5px #492F1D;
+    padding: 10px;
+}
+
+#midias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #492F1D;
+    font-size: 24px;
+}
+
+#midias a {
+    display: flex;
+    color: #492F1D;
+}
+
+#direitos {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: #492F1D;
+}
+
+#direitos p {
+    margin: 10px;
+}
+
+/* Adicionando Media Queries para responsividade */
+
+/* Adicione esta media query ao final do seu arquivo index.css */
+
+@media screen and (min-width: 1441px) {
+    /* Aumentar o corpo do site para melhor uso do espaço */
+    .corpo {
+        width: 75%;
+        max-width: 1800px;
+    }
+
+    #fachada img {
+        width: 500px;
+    }
+    
+    /* Aumentar tamanho do título principal */
+    #fachada h1 {
+        font-size: 4.5em;
+    }
+    
+    /* Aumentar tamanho dos links de navegação */
+    #sumario a {
+        font-size: 3em;
+        padding: 10px 30px;
+    }
+    
+    /* Aumentar tamanho do texto nos benefícios */
+    #beneficios .beneficio p {
+        font-size: 2em;
+    }
+    
+    #beneficios img {
+        width: 150px;
+    }
+    
+    /* Aumentar tamanho do texto da descrição do benefício */
+    #area-texto {
+        font-size: 2em;
+        max-width: 70%;
+    }
+    
+    /* Aumentar tamanho do texto nos depoimentos */
+    .avaliacao p {
+        font-size: 1.75em;
+    }
+    
+    .avaliacao img {
+        width: 300px;
+        height: 300px;
+        max-width: none;
+    }
+    
+    /* Aumentar tamanho do texto na seção de pedido */
+    #div_maps {
+        font-size: 2.5em;
+    }
+    
+    #div_maps iframe {
+        width: 300px;
+        height: 200px;
+    }
+
+    #div_maps p {
+        margin-bottom: 0;
+    }
+    
+    #div_info {
+        font-size: 40px;
+    }
+    
+    #div_botao {
+        font-size: 2.5em;
+    }
+    
+    /* Aumentar tamanho do texto no footer */
+    #midias {
+        font-size: 30px;
+    }
+    
+    #direitos {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .corpo {
+        width: 90%;
+        margin: 50px 0px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #fachada {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #fachada img {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    #sumario {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #sumario a {
+        font-size: 1.5em;
+    }
+
+    #beneficios {
+        flex-wrap: wrap;
+    }
+
+    #beneficios .beneficio {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .avaliacao {
+        width: 90%;
+        display: flex;
+        align-items: center;
+    }
+
+    #pedido {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    #pedido .tamanho {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    #seta_cima {
+        transform: rotate(0deg);
+    }
+
+    #seta_baixo {
+        transform: rotate(180deg);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .corpo {
+        width: 95%;
+        margin: 20px 0px;
+    }
+
+    #fachada h1 {
+        font-size: 2.5em;
+    }
+
+    #beneficios .beneficio {
+        width: 90%;
+    }
+
+    .avaliacao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .avaliacao img {
+        width: 200px;
+        margin-bottom: 15px;
+    }
+
+    #area-texto {
+        max-width: 90%;
+    }
+
+    #div_maps iframe {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #fachada h1 {
+        font-size: 2em;
+    }
+
+    #sumario a {
+        font-size: 1.2em;
+        padding: 5px 15px;
+    }
+
+    #div_info {
+        font-size: 24px;
+    }
+
+    #div_botao {
+        font-size: 1.5em;
+    }
+}
+
+/* Estilos para a navbar móvel */
+.navbar-mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFA51F;
+    border-bottom: solid 2.5px #492F1D;
+    z-index: 1000;
+    padding: 15px;
+}
+
+.navbar-mobile .menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: #492F1D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-mobile .logo-text {
+    font-family: 'GreatVibes';
+    font-size: 1.8em;
+    margin: 0;
+    color: #492F1D;
+}
+
+.navbar-mobile .mobile-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.navbar-mobile .mobile-links.active {
+    display: flex;
+}
+
+.navbar-mobile a {
+    text-decoration: none;
+    color: #492F1D;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #492F1D;
+}
+
+.navbar-mobile a:last-child {
+    border-bottom: none;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-mobile {
+        display: block;
+    }
+
+    .corpo {
+        margin-top: 80px;
+    }
+
+    #sumario {
+        display: none;
+    }
+}
