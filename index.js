@@ -1,14 +1,17 @@
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener('click', e => {
+document.body.addEventListener('click', e => {
+  const link = e.target.closest('a[href^="#"]');
+  if (link) {
     e.preventDefault();
     const target = document.querySelector(link.getAttribute('href'));
-    const top = target.getBoundingClientRect().top + window.pageYOffset;
-    const offset = window.innerHeight / 2 - target.offsetHeight / 2;
-    window.scrollTo({
-      top: top - offset,
-      behavior: 'smooth'
-    });
-  });
+    if (target) {
+      const top = target.getBoundingClientRect().top + window.pageYOffset;
+      const offset = window.innerHeight / 2 - target.offsetHeight / 2;
+      window.scrollTo({
+        top: top - offset,
+        behavior: 'smooth'
+      });
+    }
+  }
 });
 
 const itens = document.querySelectorAll('.beneficio');

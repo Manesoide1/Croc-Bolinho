@@ -1,18 +1,10 @@
-/* Pacifico */
+/* Great Vibes */
 @font-face {
     font-family: 'GreatVibes';
     src: url('fontes/Great_Vibes/GreatVibes-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-
-/* Poppins Light */
-/*@font-face {
-    font-family: 'Poppins';
-    src: url('fontes/Poppins/Poppins-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}*/
 
 body {
     font-family: sans-serif;
@@ -119,6 +111,10 @@ header {
 .beneficio.selecionado {
     transform: scale(1.1);
     background-color: rgba(73, 47, 29, 0.1);
+}
+
+.beneficio a {
+    text-decoration: none;
 }
 
 #beneficios img {
